@@ -4,6 +4,8 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
+    {{ test }}
+    <input type="text" v-model="test">
     <router-view/>
   </div>
 </template>
@@ -30,3 +32,10 @@
   }
 }
 </style>
+<script>
+export default {
+  data: () => ({
+    test: 'some text'
+  })
+}
+</script>
